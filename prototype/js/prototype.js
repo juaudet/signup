@@ -5,4 +5,7 @@ $(function () {
 	$.get("sidebar-ad.html", function(data) {
 	  	$("#sidebar-ad").html(data.activeElement);
 	});
+	$.get("header.html", function(data) {
+	  	$("#header").html(data.activeElement);
+	});
 });
