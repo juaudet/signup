@@ -7,4 +7,7 @@ export class User {
   LastName: string;
   Address: string;
   City: string;
+  // True = admin Site
+  // False = admin pub
+  adminSite: boolean;
 }

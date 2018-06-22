@@ -10,20 +10,25 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserService } from './shared/user.service';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { UserComponent } from './user/user.component';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
