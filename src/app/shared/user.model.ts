@@ -9,5 +9,5 @@ export class User {
   City: string;
   // True = admin Site
   // False = admin pub
-  adminSite: boolean;
+  // adminSite: boolean;
 }

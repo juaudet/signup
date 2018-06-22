@@ -19,7 +19,7 @@ import { User } from './user.model';
         LastName: user.LastName,
         Address: user.Address,
         City: user.City,
-        ConfirmPassword: user.ConfirmPassword
+        ConfirmPassword: user.ConfirmPassword,
       }
       return this.http.post(this.rootUrl + '/api/User/Register', body);
     }
